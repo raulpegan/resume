@@ -1,0 +1,169 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This is a modified ONE COLUMN version of
+% the following template:
+% 
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Raul}{Pegan}{% \urlstyle{same}%%\url{http://example.com} \\
+\href{mailto:raulpegan1@gmail.com}{raulpegan1@gmail.com} | 619.788.4672
+}
+
+%\href{http://linkedin.com/in/12346}{http://linkedin.com/in/12346}
+
+\section{Experience}
+
+\runsubsection{Talke Lab}
+\descript{| Esophageal Deflection Device }
+\location{June 2017 – Present | University of California, San Diego}
+\begin{tightemize}
+\item Developed an embedded system for a medical device that deflects the esophagus away from the heart during cardiac ablation surgeries performed on atrial fibrillation patients. Publication pending submission.
+\item Designed the analog circuit, MCU firmware, data processing, and automation. 
+\end{tightemize}
+\sectionsep
+
+\runsubsection{The Art of Product Engineering}
+\descript{| Staff Research Associate \& Teaching Assistant }
+\location{June 2016 – Present | University of California, San Diego}
+\begin{tightemize}
+\item Led the creation of a new upper division course for the Electrical \& Computer Engineering department focusing on the creation of a full stack IoT application development. 
+\item Developed the IoT ecosystem, from hardware stack composed of embedded Linux ARM devices attached to a custom REST API and web framework.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Broadcom}
+\descript{| Bluetooth SVT, Intern}
+\location{Jun 2015 – September 2015 | Rancho Bernardo, CA}
+\begin{tightemize}
+\item Developed testing frameworks for the software and firmware of the Broadcom Bluetooth stack.
+\item Created a new automated regression testing environment using Perl and C to replace older systems. 
+\end{tightemize}
+\sectionsep
+
+\runsubsection{activCirk}
+\descript{| Software Design Engineer, Intern}
+\location{February 2015 – June 2015 | San Diego, CA}
+\begin{tightemize}
+\item  Created a tool that geometrically analyzes the floorplan of MMIC GDS files and checks for design rule violations.
+\item Customized the DRC tool for the unique analog circuit process the company relies on.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+
+\runsubsection{Custom Scheduler for Linux}
+\descript{| C, ARM Assembly, Linux Kernel}
+\begin{tightemize}
+\item Developed custom kernel modules for a Raspberry Pi in order to access PMU readings and write a scheduler.
+\item Characterized the different provided workloads in order to best implement the LIST scheduler.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Branch Prediction Simulation}
+\descript{| C}
+\begin{tightemize}
+\item Simulated a variety of branch predictors from ghsare to tournament. 
+\item Created a custom predictor to maximize the efficiency given the provided constraints.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Autograder}
+\descript{| Django, Python, CSS, HTML}
+\begin{tightemize}
+\item Created an automated testing framework to grade student assignments using GitHub webhooks.
+\item Displayed grading information and notes to students via a custom dashboard.
+\end{tightemize}
+\sectionsep
+
+\section{Education}
+\runsubsection{University of California, San Diego}
+\descript{| MS in Computer Engineering}
+\location{Expected June 2019 | La Jolla, CA \textbullet{} Cum. GPA: 3.67}
+\sectionsep
+
+\runsubsection{University of California, San Diego}
+\descript{| BS in Computer Engineering}
+\location{June 2016 | La Jolla, CA} 
+\sectionsep
+
+\section{Languages}
+\begin{minipage}[t]{.6\textwidth}
+\subsection{Programming}
+C \textbullet{} Python \textbullet{} Perl \textbullet{} Verilog \textbullet{}
+SQL \textbullet{} Perl \textbullet{} Javascript\\ \LaTeX\ \textbullet{} C++ \textbullet{} CSS \textbullet{} PHP \textbullet{} Assembly \\
+\\Arch Linux + i3 + Vim enthusiast 
+\sectionsep
+\end{minipage}
+\hfill
+\begin{minipage}[t]{.35\textwidth}
+\subsection{Spoken \& Written}
+\location{Native fluency:} English, Spanish\\
+\location{Professional working proficiency:} Italian\\
+\end{minipage}
+
+\end{document}  \documentclass[]{article}
